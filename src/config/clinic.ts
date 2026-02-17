@@ -1,307 +1,363 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Clínica Mandalay | Logopedia y salud",
+  logo: "/images/logo.png",
+  tagline: "Logopedia infantil y familiar en Valencia",
+  description: "Clínica Mandalay es tu centro de logopedia y salud en Valencia, especializado en terapia infantil con enfoque integral. Dirigido por Yasmina, combinamos logopedia con naturopatía para tratar trastornos del habla, lenguaje, lectura y comunicación. Valorados con 5 estrellas por 17 familias que destacan nuestra conexión con los niños, metodología lúdica y atención personalizada.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#c7b8af",
+    secondary: "#3c3735",
+    accent: "#dccebc",
+    neutral: "#fbf9f9"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "655 54 60 53",
+  whatsapp: "+34655546053",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros servicios de logopedia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Carrer Doctor Simarro, 1, 46800 Xàtiva, Valencia, España",
+    city: "Valencia",
+    province: "Albacete",
+    postalCode: "46800",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=3791916200361116759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Cl%C3%ADnica%20Mandalay%20%7C%20Logopedia%20y%20salud%20%4038.9873%2C-0.529181&z=16&output=embed",
+  coordinates: {
+    lat: 38.9873,
+    lng: -0.529181
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - martes",
+      hours: "16:00–20:30"
+    },
+    {
+      days: "miércoles",
+      hours: "10:00–13:00, 16:00–20:00"
+    },
+    {
+      days: "jueves",
+      hours: "16:00–20:30"
+    },
+    {
+      days: "viernes",
+      hours: "10:00–13:00, 16:00–20:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 17,
+    url: "https://maps.google.com/?cid=3791916200361116759&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Alicia Martinez Llorens",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Llegamos a la clinica Mandalay cuando más lo necesitabamos. Buscabamos logopeda para mi hija y la anterior había dejado el listón muy alto. Yasmina desde el minuto 1 conectó con Júlia, motivándola y haciendo que trabajar sus necesidades sea más\nameno y divertido.\nSus conocimientos en Naturopatía han sido un grato descubrimiento para mí. Quiero destacar su lado humano y la capacidad de escucha que tiene.",
+        date: "Hace un año"
       },
       {
-        author: "Javier Padilla",
+        author: "Erica Prats",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Muy buen trato con los niños/as. Atención individualizada y directa. Muy buen trato con las familias y información continuada.\nAdemás de fàcil accesibilidad y asequible para muchas familias.\nInstalaciones muy bien adaptadas y ambientadas para el trabajo que se lleva a cabo.",
+        date: "Hace un año"
       },
       {
-        author: "Melanie Ponce",
+        author: "yazmina moragues",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Es una gran profesional, para mi hija ha sido de gran ayuda, le ha enseñado muchísimas cosas  fonéticamente, con la lectura, con el habla y le ha enseñado un montón de recurso.  Es maravillosa.",
+        date: "Hace un año"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Elena Granero Navarro",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Nuestra experiencia fue muy buena con Yasmina.\nEs una gran profesional,sabe como tratar a los niños y hacer que aprendan con juegos y actividades muy divertidas.\nMi hija iba muy contenta",
+        date: "Hace un año"
       },
-    ],
+      {
+        author: "Joselyn luna",
+        rating: 5,
+        text: "Yasmina tiene un amor increíble en lo que hace y enseña, mi hijo la ama y avanzó muchísimo con ella, además de eso es muy accesible, gracias gracias ❤️",
+        date: "Hace 2 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "logopedia-infantil",
+      name: "Logopedia Infantil",
+      description: "Evaluación y tratamiento especializado de trastornos del habla, lenguaje y comunicación en niños. Trabajamos con metodología lúdica y motivadora para que los pequeños aprendan mientras se divierten. Sesiones adaptadas a cada edad y necesidad específica.",
+      benefits: [
+        "Conexión real con el niño desde la primera sesión",
+        "Aprendizaje a través del juego y actividades divertidas",
+        "Seguimiento continuo con información a las familias"
+      ],
+      icon: "Baby"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "trastornos-foneticos",
+      name: "Trastornos Fonéticos y Articulación",
+      description: "Intervención en dificultades de pronunciación y articulación de sonidos. Enseñamos recursos prácticos para mejorar la claridad del habla y la expresión oral. Trabajamos de forma individualizada cada caso con técnicas efectivas y amenas.",
+      benefits: [
+        "Mejora notable en la pronunciación y claridad",
+        "Técnicas y recursos para practicar en casa",
+        "Aumento de la confianza al hablar"
+      ],
+      icon: "Mic"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "lectoescritura",
+      name: "Dificultades de Lectoescritura",
+      description: "Tratamiento especializado para niños con problemas de lectura y escritura, incluyendo dislexia y otras dificultades de aprendizaje. Utilizamos métodos adaptados que convierten el aprendizaje en una experiencia positiva y motivadora.",
+      benefits: [
+        "Mejora en comprensión lectora y velocidad",
+        "Refuerzo de la escritura y ortografía",
+        "Recuperación de la motivación escolar"
+      ],
+      icon: "BookOpen"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "desarrollo-lenguaje",
+      name: "Desarrollo del Lenguaje",
+      description: "Estimulación y desarrollo del lenguaje en niños con retraso o dificultades en la adquisición del habla. Trabajamos vocabulario, estructuras gramaticales y comprensión mediante actividades significativas y contextos naturales.",
+      benefits: [
+        "Ampliación del vocabulario y expresión",
+        "Mejora en la comprensión verbal",
+        "Avances visibles y continuos"
+      ],
+      icon: "MessageCircle"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "naturopatia",
+      name: "Naturopatía Complementaria",
+      description: "Enfoque integral que combina logopedia con naturopatía para potenciar los resultados terapéuticos. Valoramos aspectos nutricionales, emocionales y del bienestar general que pueden influir en el desarrollo del lenguaje y la comunicación.",
+      benefits: [
+        "Visión holística de la salud del niño",
+        "Tratamiento integral cuerpo-mente",
+        "Complemento natural a la terapia logopédica"
+      ],
+      icon: "Heart"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "logopedia-adultos",
+      name: "Logopedia para Adultos",
+      description: "Rehabilitación del habla, voz y comunicación en adultos tras patologías neurológicas, cirugías o procesos degenerativos. Tratamiento personalizado para recuperar o mantener las capacidades comunicativas.",
+      benefits: [
+        "Recuperación de habilidades comunicativas",
+        "Mejora de la calidad de vida",
+        "Atención profesional y empática"
+      ],
+      icon: "User"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "orientacion-familiar",
+      name: "Orientación a Familias",
+      description: "Asesoramiento continuo a padres y familias sobre cómo estimular el lenguaje en casa y reforzar los avances logrados en terapia. Información clara sobre el proceso y pautas prácticas para el día a día.",
+      benefits: [
+        "Comunicación directa y constante",
+        "Pautas claras para aplicar en casa",
+        "Implicación activa de la familia en el proceso"
+      ],
+      icon: "Heart"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "terapia-voz",
+      name: "Terapia de la Voz",
+      description: "Tratamiento de disfonías, alteraciones vocales y problemas de voz en niños y adultos. Técnicas de higiene vocal y reeducación para cuidar y mejorar la calidad de la voz.",
+      benefits: [
+        "Recuperación de la calidad vocal",
+        "Prevención de lesiones vocales",
+        "Técnicas de cuidado vocal diario"
+      ],
+      icon: "Mic"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotros",
+      description: "Llámanos al 655 54 60 53 o escríbenos por WhatsApp. Te atendemos personalmente para conocer tu situación y resolver tus dudas. Fácil accesibilidad y horarios flexibles para familias."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Personalizada",
+      description: "Realizamos una evaluación completa del habla, lenguaje y comunicación. Conocemos al niño o adulto en un ambiente adaptado y acogedor. Identificamos necesidades específicas y establecemos objetivos claros."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Sesiones de Logopedia",
+      description: "Comenzamos el tratamiento con sesiones individualizadas y adaptadas. Utilizamos juegos, actividades divertidas y recursos motivadores. Trabajamos con metodología que hace que aprender sea ameno y efectivo."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Avances",
+      description: "Mantenemos información continuada con las familias sobre los progresos. Ajustamos la terapia según la evolución y proporcionamos pautas para casa. Celebramos cada logro y consolidamos los avances conseguidos."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración 5⭐ por Familias Reales",
+      description: "17 reseñas en Google con puntuación perfecta. Las familias destacan nuestra capacidad de conexión con los niños, metodología lúdica efectiva y trato humano cercano. Resultados que hablan por sí mismos.",
+      icon: "Award"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Enfoque Integral: Logopedia + Naturopatía",
+      description: "Combinamos logopedia profesional con naturopatía para una visión completa de la salud. Tratamos no solo el síntoma, sino la persona en su totalidad. Un valor diferencial que nuestras familias descubren y agradecen.",
+      icon: "Heart"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Conexión Real con Cada Niño",
+      description: "Yasmina conecta desde el primer minuto con cada niño, motivándoles y haciendo que el trabajo sea ameno y divertido. Los pequeños vienen contentos porque aprenden jugando. Esa conexión es la base de los avances reales.",
+      icon: "Smile"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Atención Familiar Continua",
+      description: "Comunicación directa y constante con las familias. Proporcionamos información detallada sobre el progreso, pautas para casa y escucha activa de vuestras necesidades. Instalaciones adaptadas y tarifas accesibles para todos.",
+      icon: "Users"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Yasmina",
+      role: "Logopeda y Naturópata",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Logopedas comprometidos con la comunicación. En Clínica Mandalay | Logopedia y salud ayudamos a mejorar el habla, el lenguaje y la comunicación en todas las edades."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/hero.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "Clínica Mandalay | Logopedia y salud - Imagen 7"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué edad tienen los niños que atendéis en Clínica Mandalay?",
+      answer: "En Clínica Mandalay trabajamos con niños de todas las edades, desde la primera infancia hasta la adolescencia. Adaptamos nuestras sesiones y metodología a cada etapa evolutiva, utilizando juegos y actividades apropiadas para cada edad. También atendemos adultos que necesitan rehabilitación logopédica."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cómo son las sesiones de logopedia infantil?",
+      answer: "Nuestras sesiones son individualizadas y muy dinámicas. Yasmina conecta con cada niño desde el primer momento, utilizando juegos, actividades lúdicas y recursos motivadores que hacen que el aprendizaje sea divertido. Los niños vienen contentos porque aprenden jugando, y las familias reciben información continua sobre los avances."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Qué problemas del habla tratáis en la clínica?",
+      answer: "Tratamos dificultades fonéticas y de articulación, retrasos en el desarrollo del lenguaje, problemas de lectoescritura, trastornos de la voz y dificultades de comunicación en general. Cada tratamiento es personalizado según las necesidades específicas del niño o adulto, con seguimiento continuo y orientación familiar."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué es la naturopatía y cómo se relaciona con la logopedia?",
+      answer: "En Clínica Mandalay combinamos logopedia con naturopatía para ofrecer un enfoque integral de la salud. La naturopatía complementa el tratamiento logopédico considerando aspectos nutricionales, emocionales y del bienestar general que pueden influir en el desarrollo del lenguaje y la comunicación. Es un valor añadido que muchas familias descubren y valoran positivamente."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Dónde está ubicada la clínica y cómo pido cita?",
+      answer: "Clínica Mandalay está en Valencia, con instalaciones adaptadas y ambientadas especialmente para el trabajo con niños. Para pedir cita puedes llamarnos al 655 54 60 53 o escribirnos por WhatsApp. Ofrecemos fácil accesibilidad y tarifas asequibles para las familias."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Cuánto dura un tratamiento de logopedia?",
+      answer: "La duración depende de cada caso y de las necesidades específicas. Tras la valoración inicial establecemos objetivos claros y un plan de tratamiento personalizado. Realizamos seguimiento continuo y ajustamos la terapia según la evolución. Muchas familias ven avances significativos desde las primeras sesiones."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Reciben las familias información sobre el progreso?",
+      answer: "Sí, en Clínica Mandalay mantenemos comunicación directa y continuada con las familias. Proporcionamos información regular sobre los avances, explicamos qué trabajamos en cada sesión y damos pautas prácticas para reforzar en casa. La capacidad de escucha y el trato cercano son valores que nuestras familias destacan especialmente."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué opinan las familias que ya han venido?",
+      answer: "Clínica Mandalay tiene una valoración de 5 estrellas en Google con 17 reseñas de familias satisfechas. Los padres destacan la conexión que Yasmina establece con los niños, su profesionalidad, el ambiente acogedor, las instalaciones adaptadas y los avances conseguidos. Muchos llegan recomendados y encuentran justo lo que necesitaban para sus hijos."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Clínica Mandalay | Logopedia y salud",
+    defaultTitle: "Clínica Mandalay | Logopedia Infantil en Valencia",
+    defaultDescription: "Centro de logopedia infantil y familiar en Valencia. Tratamos habla, lenguaje, lectura con enfoque integral. 5⭐ en Google. Naturopatía complementaria. Pide cita: 655 54 60 53",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "logopedia infantil Valencia",
+      "logopeda niños Valencia",
+      "Clínica Mandalay",
+      "logopedia Valencia",
+      "trastornos habla Valencia",
+      "dificultades lectoescritura Valencia",
+      "naturopatía Valencia",
+      "logopeda Yasmina Valencia",
+      "terapia lenguaje infantil Valencia",
+      "pronunciación niños Valencia",
+      "logopedia familiar Valencia",
+      "centro logopedia Valencia"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Clínica Mandalay | Logopedia y salud",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Carrer Doctor Simarro, 1, 46800 Xàtiva, Valencia, España, Valencia, Albacete"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Logopedia",
+    "en Valencia"
+  ],
+  heroDescription: "Centro de logopedia especializado en niños y familias en Valencia. Tratamos dificultades del habla, lenguaje, lectura y comunicación con un enfoque humano, lúdico y efectivo. Combinamos logopedia profesional con naturopatía para resultados integrales.",
+  specialty: "Logopedia Infantil",
+  ctaLabel: "Mejor Comunicación",
+  ctaHeadline: "¿Tu hijo necesita apoyo con el habla o la lectura?",
+  ctaDescription: "Contacta con nosotros y descubre cómo podemos ayudaros. Primera valoración personalizada para conocer las necesidades de tu familia.",
+  statsLabel: "Pacientes",
+  schemaType: "SpeechPathology",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
